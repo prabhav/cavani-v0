@@ -247,14 +247,23 @@ export function DashboardView() {
             <CardTitle className="text-lg">Calendar</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="calendar-wrapper">
+            <div className="flex justify-center">
               <Calendar
                 mode="single"
                 selected={date}
                 onSelect={setDate}
-                className="rounded-md border mx-auto"
+                className="border rounded-md"
                 classNames={{
                   day_today: "bg-amber-50 text-amber-600 font-semibold",
+                  day_selected:
+                    "bg-blue-600 text-white hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white",
+                  head_cell: "text-gray-500 font-medium text-xs",
+                  cell: "h-9 w-9 text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
+                  nav_button: "h-7 w-7 bg-transparent p-0 opacity-70 hover:opacity-100",
+                  table: "w-full border-collapse space-y-1",
+                  caption: "flex justify-center pt-1 relative items-center mb-2",
+                  caption_label: "text-sm font-medium",
+                  day: "h-9 w-9 p-0 font-normal aria-selected:opacity-100",
                 }}
               />
             </div>

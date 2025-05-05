@@ -6,6 +6,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
+  SidebarSeparator,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -22,70 +23,77 @@ export function MainSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="/dashboard">
-                <Home className="mr-3 h-5 w-5" />
+                <Home className="mr-1 h-5 w-5" />
                 <span>Dashboard</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="/cases">
-                <FileText className="mr-3 h-5 w-5" />
+                <FileText className="mr-1 h-5 w-5" />
                 <span>All Cases</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="/tasks">
-                <CheckSquare className="mr-3 h-5 w-5" />
+                <CheckSquare className="mr-1 h-5 w-5" />
                 <span>Tasks</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="#">
-                <FileSpreadsheet className="mr-3 h-5 w-5" />
+                <FileSpreadsheet className="mr-1 h-5 w-5" />
                 <span>Templates</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="#">
-                <Archive className="mr-3 h-5 w-5" />
+                <Archive className="mr-1 h-5 w-5" />
                 <span>Archive</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="#">
-                <Users className="mr-3 h-5 w-5" />
+                <Users className="mr-1 h-5 w-5" />
                 <span>Clients</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="#">
-                <Settings className="mr-3 h-5 w-5" />
+                <Settings className="mr-1 h-5 w-5" />
                 <span>Settings</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarSeparator className="bg-gray-700 opacity-30 mx-4" />
 
           <SidebarMenuItem>
             <SidebarMenuButton className="py-3 px-6 transition-colors hover:bg-[#3a3a3a] flex items-center" asChild>
               <Link href="#">
-                <User className="mr-3 h-5 w-5" />
+                <User className="mr-1 h-5 w-5" />
                 <span>Profile</span>
               </Link>
             </SidebarMenuButton>

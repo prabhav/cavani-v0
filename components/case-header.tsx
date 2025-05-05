@@ -3,14 +3,19 @@
 import { ChevronRight, Plus, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { SidebarTrigger } from "@/components/ui/sidebar"
+import Link from "next/link"
 
 export function CaseHeader({ onRightSidebarToggle }) {
   return (
     <div className="border-b border-gray-200 bg-white px-4 md:px-8 py-4">
       <div className="flex items-center text-sm text-gray-500 mb-2">
-        <SidebarTrigger className="mr-2 hover:bg-gray-100 transition-colors" />
-        <span className="hidden sm:inline">Cases</span>
+        <Link href="/dashboard" className="hover:text-gray-700 transition-colors">
+          <span className="hidden sm:inline">Dashboard</span>
+        </Link>
+        <ChevronRight className="h-4 w-4 mx-1 hidden sm:inline" />
+        <Link href="/cases" className="hover:text-gray-700 transition-colors">
+          <span className="hidden sm:inline">Cases</span>
+        </Link>
         <ChevronRight className="h-4 w-4 mx-1 hidden sm:inline" />
         <span className="hidden md:inline">Civil Suits</span>
         <ChevronRight className="h-4 w-4 mx-1 hidden md:inline" />

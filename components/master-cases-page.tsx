@@ -413,8 +413,16 @@ export function MasterCasesPage() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {cases.map((caseItem) => (
-                  <TableRow key={caseItem.id} className="hover:bg-gray-50 cursor-pointer">
+                {cases.map((caseItem, index) => (
+                  <TableRow
+                    key={caseItem.id}
+                    className="hover:bg-gray-50 cursor-pointer"
+                    onClick={() => {
+                      if (index === 0) {
+                        window.location.href = "/case-detail"
+                      }
+                    }}
+                  >
                     <TableCell className="font-medium">{caseItem.caseNumber}</TableCell>
                     <TableCell>{caseItem.title}</TableCell>
                     <TableCell>{caseItem.court}</TableCell>
