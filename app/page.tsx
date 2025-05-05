@@ -1,5 +1,5 @@
-import { CaseDetailPage } from "@/components/case-detail-page"
+import { redirect } from "next/navigation"
 
 export default function Home() {
-  return <CaseDetailPage />
+  redirect("/dashboard")
 }
